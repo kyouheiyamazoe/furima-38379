@@ -1,11 +1,11 @@
 # README
 
-## "users" table
+## users table
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | nickname           | string     | null: false                    |
-| mail               | string     | null: false, unique: true      |
+| email               | string     | null: false, unique: true      |
 | encrypted_password | string     | null: false                    |
 | last_name          | string     | null: false                    |
 | first_name         | string     | null: false                    |
@@ -17,7 +17,7 @@
  has_many :items
  has_many :purchases
 
-## "items" table
+## items table
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -35,7 +35,7 @@
  belongs_to :user
  has_one    :purchase
 
-## "purchases" table
+## purchases table
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -47,7 +47,7 @@
  belongs_to :item
  has_one    :address
 
-## "addresses" table
+## addresses table
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
