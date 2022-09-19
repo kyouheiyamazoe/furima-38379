@@ -5,17 +5,17 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | nickname           | string     | null: false                    |
-| mail_address       | string     | null: false, unique: true      |
-| password           | string     | null: false                    |
+| mail               | string     | null: false, unique: true      |
+| encrypted_password | string     | null: false                    |
 | last_name          | string     | null: false                    |
 | first_name         | string     | null: false                    |
-| last_name_katakana | string     | null: false                    |
-| first_name_katakana| string     | null: false                    |
+| last_name_kana     | string     | null: false                    |
+| first_name_kana    | string     | null: false                    |
 | birthday           | date       | null: false                    |
 
 ### Association
  has_many :items
- has_many :purchase
+ has_many :purchases
 
 ## "items" table
 
